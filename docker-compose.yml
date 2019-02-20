@@ -1,0 +1,9 @@
+version: "3"
+services:
+  server:
+    container_name: running_ticket_hunter
+    build: .
+    volumes:
+      - .:/go/src/app
+    ports:
+      - "8080:80"
