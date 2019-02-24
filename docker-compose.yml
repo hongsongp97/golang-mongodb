@@ -1,9 +1,9 @@
 version: "3"
 services:
   server:
-    container_name: running_ticket_hunter
+    container_name: running_server
     build: .
     volumes:
-      - .:/go/src/app
+      - .:/go/src/github.com/hongsongp97/golang-mongodb
     ports:
       - "8080:80"
